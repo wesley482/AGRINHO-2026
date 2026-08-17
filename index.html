@@ -1,146 +1,538 @@
-index.html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro forte, futuro sustentável</title>
 
-    <style>
-        body{
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
+    <meta
+        name="description"
+        content="AGRINHO 2026 - Agro forte, futuro sustentável."
+    >
 
-        header{
-            background-color: #2e7d32;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
+    <title>AGRINHO 2026 | Futuro Sustentável</title>
 
-        nav{
-            background-color: #1b5e20;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a{
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-weight: bold;
-        }
-
-        section{
-            padding: 30px;
-        }
-
-        .imagem{
-            text-align: center;
-        }
-
-        footer{
-            background-color: #2e7d32;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        .comentarios{
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        input, textarea{
-            width: 100%;
-            margin-top: 10px;
-            padding: 10px;
-        }
-
-        button{
-            margin-top: 15px;
-            background-color: #2e7d32;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-
-        button:hover{
-            background-color: #1b5e20;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <h1>Agro forte, futuro sustentável</h1>
-        <p>Equilíbrio entre produção e meio ambiente</p>
+    <!-- CABEÇALHO -->
+
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-symbol">✦</span>
+
+                <div>
+                    <strong>AGRINHO<span>26</span></strong>
+                    <small>AGRO • FUTURO • SUSTENTABILIDADE</small>
+                </div>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation">
+
+                <a href="#inicio" class="nav-link active">
+                    Início
+                </a>
+
+                <a href="#conceito" class="nav-link">
+                    Conceito
+                </a>
+
+                <a href="#solucoes" class="nav-link">
+                    Soluções
+                </a>
+
+                <a href="#impacto" class="nav-link">
+                    Impacto
+                </a>
+
+                <a href="#contato" class="nav-link">
+                    Contato
+                </a>
+
+            </nav>
+
+            <a href="#contato" class="header-cta">
+                PARTICIPE ↗
+            </a>
+
+        </div>
+
     </header>
 
-    <!-- Menu -->
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#sustentabilidade">Sustentabilidade</a>
-        <a href="#comentarios">Comentários</a>
-    </nav>
 
-    <!-- Seção Sobre -->
-    <section id="sobre">
-        <h2>O Agro e o Futuro</h2>
+    <main>
 
-        <p>
-            O agronegócio é fundamental para a economia e para a alimentação da população.
-            Com práticas sustentáveis, é possível produzir mais sem prejudicar o meio ambiente.
-        </p>
+        <!-- HERO -->
 
-        <div class="imagem">
-            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854"
-                 alt="Plantação sustentável"
-                 width="70%">
+        <section class="hero" id="inicio">
+
+            <div class="hero-image"></div>
+
+            <div class="hero-gradient"></div>
+
+            <div class="container hero-content">
+
+                <div class="hero-label">
+                    <span></span>
+                    AGRINHO 2026
+                </div>
+
+                <h1>
+                    AGRO FORTE.
+                    <br>
+                    <em>FUTURO</em>
+                    SUSTENTÁVEL.
+                </h1>
+
+                <p class="hero-description">
+                    O equilíbrio entre produção, inovação e
+                    preservação ambiental começa com as escolhas
+                    que fazemos hoje.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#conceito" class="primary-button">
+                        Explorar projeto
+                        <span>↓</span>
+                    </a>
+
+                    <a href="#solucoes" class="secondary-button">
+                        Nossas soluções
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-number">
+                01<span>/04</span>
+            </div>
+
+            <div class="scroll-indicator">
+                <span></span>
+                ROLE PARA EXPLORAR
+            </div>
+
+        </section>
+
+
+        <!-- CONCEITO -->
+
+        <section class="concept" id="conceito">
+
+            <div class="container">
+
+                <div class="section-top">
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <span class="section-category">
+                        NOSSO CONCEITO
+                    </span>
+
+                </div>
+
+
+                <div class="concept-grid">
+
+                    <div class="concept-title">
+
+                        <h2>
+                            Produzir.
+                            <br>
+                            <span>Preservar.</span>
+                            <br>
+                            Evoluir.
+                        </h2>
+
+                    </div>
+
+
+                    <div class="concept-text">
+
+                        <p class="large-text">
+                            A agricultura do futuro não precisa
+                            escolher entre produtividade e
+                            natureza.
+                        </p>
+
+                        <p>
+                            Com tecnologia, planejamento e
+                            responsabilidade, podemos construir
+                            um modelo agrícola que gere alimentos,
+                            renda e desenvolvimento enquanto
+                            protege os recursos naturais.
+                        </p>
+
+                        <a href="#solucoes" class="text-link">
+                            Descubra como
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="concept-image">
+
+                    <img
+                        src="assets/imagem-sustentabilidade.jpg"
+                        alt="Paisagem natural preservada com rio e vegetação"
+                    >
+
+                    <div class="image-caption">
+                        <span>01</span>
+                        PRESERVAÇÃO É INVESTIMENTO NO FUTURO
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOLUÇÕES -->
+
+        <section class="solutions" id="solucoes">
+
+            <div class="container">
+
+                <div class="section-top light">
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <span class="section-category">
+                        CAMINHOS PARA O FUTURO
+                    </span>
+
+                </div>
+
+
+                <div class="solutions-heading">
+
+                    <h2>
+                        Tecnologia a serviço
+                        <br>
+                        <span>da natureza.</span>
+                    </h2>
+
+                    <p>
+                        Pequenas mudanças podem transformar
+                        a maneira como produzimos.
+                    </p>
+
+                </div>
+
+
+                <div class="solution-grid">
+
+                    <article class="solution-card">
+
+                        <span class="solution-number">
+                            01
+                        </span>
+
+                        <div class="solution-icon">
+                            💧
+                        </div>
+
+                        <h3>
+                            Água inteligente
+                        </h3>
+
+                        <p>
+                            Sistemas de irrigação eficientes
+                            reduzem desperdícios e preservam
+                            os recursos hídricos.
+                        </p>
+
+                        <span class="card-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+
+                    <article class="solution-card featured">
+
+                        <span class="solution-number">
+                            02
+                        </span>
+
+                        <div class="solution-icon">
+                            🌱
+                        </div>
+
+                        <h3>
+                            Solo vivo
+                        </h3>
+
+                        <p>
+                            Técnicas de conservação ajudam
+                            a manter a fertilidade e a saúde
+                            do solo.
+                        </p>
+
+                        <span class="card-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+
+                    <article class="solution-card">
+
+                        <span class="solution-number">
+                            03
+                        </span>
+
+                        <div class="solution-icon">
+                            🛰️
+                        </div>
+
+                        <h3>
+                            Agricultura digital
+                        </h3>
+
+                        <p>
+                            Dados e tecnologia ajudam o
+                            produtor a tomar decisões mais
+                            precisas e sustentáveis.
+                        </p>
+
+                        <span class="card-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+
+                    <article class="solution-card">
+
+                        <span class="solution-number">
+                            04
+                        </span>
+
+                        <div class="solution-icon">
+                            🐝
+                        </div>
+
+                        <h3>
+                            Biodiversidade
+                        </h3>
+
+                        <p>
+                            Preservar os ecossistemas fortalece
+                            o equilíbrio natural e a produção.
+                        </p>
+
+                        <span class="card-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMPACTO -->
+
+        <section class="impact" id="impacto">
+
+            <div class="container">
+
+                <div class="impact-header">
+
+                    <div>
+
+                        <span class="section-category">
+                            03 — NOSSO IMPACTO
+                        </span>
+
+                        <h2>
+                            Resultados que
+                            <span>fazem diferença.</span>
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Desenvolvimento agrícola e
+                        preservação ambiental podem
+                        caminhar juntos.
+                    </p>
+
+                </div>
+
+
+                <div class="stats">
+
+                    <div class="stat">
+
+                        <strong
+                            data-target="5000"
+                            data-prefix="+"
+                        >
+                            0
+                        </strong>
+
+                        <span>
+                            Produtores
+                            <br>
+                            envolvidos
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong
+                            data-target="100"
+                            data-prefix="+"
+                        >
+                            0
+                        </strong>
+
+                        <span>
+                            Mil hectares
+                            <br>
+                            preservados
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong
+                            data-target="20"
+                            data-prefix="+"
+                            data-suffix="%"
+                        >
+                            0
+                        </strong>
+
+                        <span>
+                            Uso consciente
+                            <br>
+                            da água
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong
+                            data-target="1"
+                            data-prefix="+"
+                            data-suffix="M"
+                        >
+                            0
+                        </strong>
+
+                        <span>
+                            Pessoas
+                            <br>
+                            impactadas
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAMADA FINAL -->
+
+        <section class="final-section" id="contato">
+
+            <div class="container final-content">
+
+                <span class="section-category">
+                    04 — FAÇA PARTE
+                </span>
+
+                <h2>
+                    O futuro começa
+                    <br>
+                    <span>agora.</span>
+                </h2>
+
+                <p>
+                    Produzir hoje. Preservar sempre.
+                    Construir juntos o agro que queremos
+                    para as próximas gerações.
+                </p>
+
+                <button class="final-button" id="contactButton">
+                    QUERO FAZER PARTE
+                    <span>↗</span>
+                </button>
+
+                <p class="contact-message" id="contactMessage"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-logo">
+                AGRINHO<span>26</span>
+            </div>
+
+            <p>
+                Agro forte, futuro sustentável.
+            </p>
+
+            <p>
+                © 2026 Agrinho
+            </p>
+
         </div>
-    </section>
 
-    <!-- Seção Sustentabilidade -->
-    <section id="sustentabilidade">
-        <h2>Produção com Responsabilidade</h2>
-
-        <p>
-            A preservação das florestas, o uso consciente da água e novas tecnologias ajudam
-            o campo a crescer de forma sustentável.
-        </p>
-    </section>
-
-    <!-- Comentários da turma -->
-    <section id="comentarios">
-        <div class="comentarios">
-
-            <h2>Comentários da Turma</h2>
-
-            <form>
-                <label>Nome:</label>
-                <input type="text" placeholder="Digite seu nome">
-
-                <label>Comentário:</label>
-                <textarea rows="5" placeholder="Escreva seu comentário"></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>Projeto AGRINHO 2026 - Educação e Sustentabilidade</p>
     </footer>
 
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
-
-
